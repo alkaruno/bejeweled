@@ -19,6 +19,7 @@ var bejeweled = {
 
     field: null,
     selectedItem: null,
+    points: 0,
 
     init: function() {
 
@@ -132,14 +133,14 @@ var bejeweled = {
             }
         }
 
-        var needCaving = false;
+        var deleted = 0;
 
         for (x = 0; x < 8; x++) {
             for (y = 0; y < 8; y++) {
                 if (tmp[x][y] == 1) {
                     field[x][y] = 0;
                     $(('#xy' + x) + y).addClass('remove');
-                    needCaving = true;
+                    deleted++;
                 }
             }
         }
@@ -148,7 +149,12 @@ var bejeweled = {
             $('.remove').remove();
         });
 
-        if (needCaving) {
+        if (deleted > 0) {
+            self.points += Math.min(Math.pow(2, deleted - 3), 20 * deleted);
+            $('#points').html(self.points);
+        }
+
+        if (deleted > 0) {
             setTimeout('self._caving()', 500);
         } else if (elem1 && elem2) {
             self._swap(elem1, elem2, true);

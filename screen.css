@@ -6,10 +6,21 @@ body {
     background-color: black;
     overflow: hidden;
     position: absolute;
-    left: 50px;
+    left: 120px;
     top: 50px;
     width: 328px;
     height: 328px;
+}
+
+#points {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    width: 80px;
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    font-family: "Calibri", "Trebuchet MS", sans-serif;
 }
 
 .item {
