@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+}
+
+#field {
+    background-color: black;
+    overflow: hidden;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    width: 328px;
+    height: 328px;
+}
+
+.item {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+}
