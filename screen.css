@@ -6,8 +6,8 @@ body {
     background-color: black;
     overflow: hidden;
     position: absolute;
-    left: 100px;
-    top: 100px;
+    left: 50px;
+    top: 50px;
     width: 328px;
     height: 328px;
 }
@@ -16,4 +16,8 @@ body {
     width: 40px;
     height: 40px;
     position: absolute;
+}
+
+.selected {
+    opacity: 0.5;
 }
