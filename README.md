@@ -3,4 +3,4 @@ bejeweled
 
 jQuery implementation of the famous game
 
-Demo: [http://xplosio.com/bejeweled/](http://xplosio.com/bejeweled/)
+Demo: [http://alkaruno.ru/bejeweled/](http://alkaruno.ru/bejeweled/)
