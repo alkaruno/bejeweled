@@ -19,7 +19,7 @@ var bejeweled = {
 
         self._processField();
 
-        $('.item').live('click', function() {
+        $(document).on('click', '.item', function() {
             var $elem = $(this);
             if (self.selectedItem != null) {
                 self.selectedItem.removeClass('selected');
